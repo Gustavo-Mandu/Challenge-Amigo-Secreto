@@ -5,20 +5,26 @@ let listaAmigos = [];
 function adicionarAmigo() {
     let nomeInserido = document.querySelector('input').value;
 
-    if (nomeInserido != "") {
+    if (nomeInserido != '') {
     listaAmigos.push(nomeInserido);
     limparCampo();
     atualizarListaDeAmigos();
 } else alert('Por favor, insira um nome.');
 
-
 }
 
 function sortearAmigo() {
-    for (let i = 0; i < listaAmigos.length; i++) {
-        console.log(listaAmigos[i]);
+    if (listaAmigos != '') {
+        let quantidadeDeAmigos = listaAmigos.length;
+        let numeroAleatorio = Math.random() * quantidadeDeAmigos;
+        let indiceDoAmigoSorteado = Math.floor(numeroAleatorio);
+        console.log(numeroAleatorio);
+        console.log('índice: ' + indiceDoAmigoSorteado + ' ' + 'array: ' + listaAmigos[indiceDoAmigoSorteado]);
         
-    }
+        resultado = document.getElementById('resultado');
+        resultado.innerHTML = 'Amigo sorteado: ' + listaAmigos[indiceDoAmigoSorteado];
+    
+    } else alert('A lista está vazia.');
 }
 
 function limparCampo() {
