@@ -38,7 +38,7 @@
 
 |                               Página Inicial                           
 | :-------------------------------------------------------------------: | 
-| <img src="assets\imagemIndex.png" title="Página Inicial" width="100%"> |
+| <img src="assets\imagemIndex.png" title="Página Inicial" width="100%" height =350px> |
 
 </details>
 
