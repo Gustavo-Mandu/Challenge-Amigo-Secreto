@@ -54,6 +54,12 @@ HTML, CSS e JavaScript.
 
 ### Como utilizar
 
-Acesse o link disponibilizado <!-- colocar no ar --> para ver o site funcionando.
+Acesse o link disponibilizado na descrição do projeto, no canto superior direito da página para ver o site funcionando.
 
 Depois, utilize o campo de texto e os botões conforme a imagem do projeto no campo "Sobre".  
+
+
+### Autor
+
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/99223328?v=4" width=115><br><sub>Gustavo Mandu Ferreira Matori</sub>](https://github.com/gustavo-mandu)
+| :---: |
