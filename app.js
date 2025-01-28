@@ -7,10 +7,11 @@ function adicionarAmigo() {
 
     if (nomeInserido != "") {
     listaAmigos.push(nomeInserido);
-    campo.innerHTML += nomeInserido + "</br>";
     limparCampo();
-
+    atualizarListaDeAmigos();
 } else alert('Por favor, insira um nome.');
+
+
 }
 
 function sortearAmigo() {
@@ -23,4 +24,19 @@ function sortearAmigo() {
 function limparCampo() {
     nomeInserido = document.querySelector('input');
     nomeInserido.value = '';
+}
+
+function atualizarListaDeAmigos() {
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = '';
+
+    let novoItem = document.createElement('li');
+    for (let i = 0; i < listaAmigos.length; i++) {
+        lista.innerHTML += listaAmigos[i] + '</br>';
+
+        // abaixo funcionaria também
+        // novoItem.textContent = listaAmigos[i]; 
+        // lista.appendChild(novoItem);
+    }
+
 }
